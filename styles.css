@@ -1,0 +1,163 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9em;
+}
+
+a {
+  margin: 5px;
+  text-decoration: none;
+  color: #000;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__nav-list {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  margin-right: 10px;
+}
+
+ul > a,
+ul > img {
+  padding: 0 8px;
+}
+
+.header__nav-img:hover {
+  box-sizing: 0 0 10px 0 rgb(204, 202, 202);
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5vh;
+}
+
+.section__input-container {
+  display: flex;
+  justify-content: space-between;
+  min-width: 600px;
+  min-height: 45px;
+  border: 0.5px solid gainsboro;
+  border-radius: 50px;
+}
+
+.section__input-container > img {
+  width: 12px;
+  height: 17px;
+  align-self: center;
+  margin-right: 18px;
+}
+
+.section__input-container .fa-search {
+  align-self: center;
+  margin-left: 18px;
+}
+
+.section__input-container:hover {
+  box-shadow: 0 0 10px 0 gainsboro;
+}
+
+.section__input-container .section__input-box {
+  flex-grow: 1;
+  border: none;
+  outline: none;
+}
+
+.section__logo {
+  margin-bottom: 30px;
+  margin-top: 70px;
+}
+
+img:hover {
+  cursor: pointer;
+}
+
+.section__button-container {
+  padding-top: 53px;
+}
+
+.section__button-container > button {
+  background-color: #f8f9fa;
+  border-radius: 5px;
+  border: none;
+  height: 36px;
+  padding: 0 20px;
+  margin: 0 4px;
+}
+
+.section__button-container > button:hover {
+  cursor: pointer;
+  border: 1px solid gainsboro;
+  box-shadow: 0 0 2px gainsboro;
+}
+
+footer {
+  background-color: #f2f2f2;
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+}
+
+.footer__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__nav-left {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 20px;
+  align-items: center;
+}
+
+.footer__nav-right {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 20px;
+  align-items: center;
+}
+
+@media (max-width: 630px) {
+  .section__input-container {
+    min-width: 95vw;
+  }
+
+  .footer__nav {
+    flex-direction: column;
+  }
+
+  .footer__nav-left {
+    justify-content: center;
+  }
+
+  .footer__nav-right {
+    justify-content: center;
+  }
+}
+
+@media (max-height: 522px) {
+  body {
+    overflow: hidden;
+  }
+
+  section {
+    margin-bottom: 20px;
+  }
+
+  footer {
+    position: relative;
+  }
+}
