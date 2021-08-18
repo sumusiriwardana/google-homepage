@@ -1,6 +1,6 @@
 # Recreate Google Homepage 
 
-This project is to recreate the Google.com homepage as an assginement for [The Odin Project](https://www.theodinproject.com/) curriculum.
+This project is to recreate the Google.com homepage as an assignment for [The Odin Project](https://www.theodinproject.com/) curriculum.
 
 ### Screenshot
 
